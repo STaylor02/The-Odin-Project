@@ -1,0 +1,33 @@
+div.bold-text {  /* selector */
+    font-weight: 700; /*property + value */
+}
+
+* { /* * is a universal selector, selects elements of any type. */
+    color: purple;
+}
+
+div { /* will select all div elements, but not elements like paragraphs */
+    color: white;
+}
+
+.alert-text { /*a class selector that will select all elements within the given class. shown using just a period . - in html, looks like <div class = ""> */
+    color: red;
+}
+
+#title { /* a selector that will seelct an element with the given ID. this is by using the # - in html, it looks like <div id = ""> */
+    background-color: red;
+}
+
+.read, /*grouping selector, allows you to select elements from any group if they share any similar style declarations, helps cut down on repetition. */
+.unread {
+    color: white;
+    background-color: black;
+}
+
+.ancestor .content { /*this is a descendant combinator. Allows you to access the "class child" within another class. */
+
+}
+
+/* external CSS - CSS from an external Style sheet that is linked to the html file.
+internal CSS - using  <style> within the html file.
+inline CSS - using css code within the lines of html, for example - using <div style> within the body.
